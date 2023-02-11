@@ -16,7 +16,7 @@ function Register() {
     const handleClick = async()=>{
         if(data.username !==null && data.password !== null){
             if(cpass === data.password){
-                await fetch("http://localhost:5000/signup",{
+                await fetch("https://book-listnodejs.onrender.com/signup",{
                     method:"POST",
                     headers:{
                         "content-type":"application/json",
